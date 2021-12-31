@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png"
+        type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body>
+
+
+    <header class="primary-header flex items-center justify-between py-[1rem]">
+        <div>
+            <a href=""><img src="./assets/shared/logo.svg"
+                    alt="space tourism logo" class="logo pl-4">
+            </a>
+        </div>
+
+        <div
+            class="nav-line lg:fixed lg:border-t-3 lg:w-[42%] lg:border-pureWhite/50 lg:left-[18%] lg:-z-[1]">
+        </div>
+
+        <button class="mobile-nav-toggle block absolute z-[9999] bg-transparent bg-hamburger
+        bg-no-repeat border-none w-[1.8rem] aspect-square top-8 right-5  
+        sm:hidden sm:z-[9999]
+        
+        " aria-controls="primary-navigation " aria-expanded="false">
+
+            <span class="sr-only">menu</span>
+        </button>
+
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation 
+            flex bg-bgNav text-white backdrop-blur-[5rem]
+
+                smMax:flex-col smMax:gap-8 smMax:fixed smMax:z-[10]
+                smMax:customInset smMax:pt-[45%] smMax:pl-[8%]
+                smMax:translate-x-full smMax:duration-700 smMax:ease-in-out
+                
+                sm:gap-[2.5rem] sm:p-[1.5rem] sm:px-10">
+
+                <li class="active">
+                    <a href="index.html" class="font-BarlowCondensed uppercase tracking-[2.7px] 
+                    font-fw400 text-v11 
+
+                      sm:border-b-3 sm:border-pureWhite sm:pb-6 sm:outline-none
+                      sm:hover:border-b-3 sm:hover:border-opacity-50 
+                      sm:focus:border-b-3 sm:focus:border-opacity-50 ">
+                        <span class="font-fw700 mr-[.75rem]"
+                            aria-hidden="true">00</span>Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class=" font-BarlowCondensed uppercase tracking-[2.7px] 
+                    font-fw400 text-v11 outline-none
+                    
+                         sm:hover:border-b-3 sm:hover:border-opacity-50 sm:hover:pb-6
+                         sm:focus:border-b-3 sm:focus:border-opacity-50 sm:focus:pb-6
+                        ">
+                        <span class="font-fw700 mr-[.75rem]"
+                            aria-hidden="true">01</span>destination
+                    </a>
+                </li>
+
+                <li>
+                    <a href=""
+                        class=" font-BarlowCondensed uppercase
+                     tracking-[2.7px] font-fw400 text-v11 outline-none
+                     
+                         sm:hover:border-b-3 sm:hover:border-opacity-50 sm:hover:pb-6
+                         sm:focus:border-b-3 sm:focus:border-opacity-50 sm:focus:pb-6">
+                        <span class="font-fw700 mr-[.75rem]"
+                            aria-hidden="true">02</span>crew
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class=" font-BarlowCondensed uppercase tracking-[2.7px] 
+                    font-fw400 text-v11 outline-none
+
+                         sm:hover:border-b-3 sm:hover:border-opacity-50
+                         sm:hover:pb-6
+                         sm:focus:border-b-3 sm:focus:border-opacity-50
+                         sm:focus:pb-6">
+                        <span class="font-fw700 mr-[.75rem]"
+                            aria-hidden="true">03</span>technology
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="hero-container absolute text-pureWhite text-center top-0 -z-10
+            flex items-center justify-center">
+            <div class="hero-img relative bg-homeBgPhn bg-no-repeat bg-center 
+                bg-cover w-screen h-screen
+                
+            sm:bg-homeBgTab
+            lg:bg-homeBgDesk ">
+            </div>
+            <div class="space absolute mt-10 lg:flex lg:flex-col lg:items-center
+             lg:justify-center lg:text-center
+             
+             xl:flex-row xl:text-left">
+                <div class="space-desc xl:mr-[25rem]">
+                    <span class="font-BarlowCondensed text-grayishBlue uppercase 
+                        text-v11 tracking-[2.4px]
+                        
+                        sm:text-v9
+                        lg:text-v8 ">
+                        so, you want to travel to
+                    </span>
+                    <h1 class="font-Bellefair text-v3 uppercase font-fw400 py-2
+                        
+                        sm:text-v1">
+                        space
+                    </h1>
+                    <p class="text-v12 px-5 leading-6 text-grayishBlue
+                    
+                    sm:text-v11 sm:px-[7.5rem]
+                    lg:text-v10 lg:pl-0 lg:pr-0 lg:w-[445px]
+
+                    ">Let’s
+                        face it; if you want to go to
+                        space, you might as
+                        well genuinely go to outer space and not
+                        hover kind of on the edge of it. Well sit back, and
+                        relax because we’ll give you a truly out of
+                        this world experience!
+                    </p>
+                </div>
+
+                <a class="large-btn relative font-Bellefair z-[10] uppercase 
+                text-v9 tracking-wide text-veryDark font-fw400 
+                m-auto text-center flex items-center justify-center 
+                bg-pureWhite h-[150px] w-[150px] rounded-[50%] 
+                cursor-pointer mt-12 my-11 outline-none
+
+               after:absolute after:-z-[3] after:w-full after:h-full
+               after:bg-largeBtnClr after:rounded-[50%] after:duration-700 
+               after:ease-easeOutCirc
+                
+                hover:after:scale-150 hover:after:opacity-100
+                focus:after:scale-150 focus:after:opacity-100
+                
+                sm:h-[242px] sm:w-[242px] sm:mt-20
+                
+                " href="">explore
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script src=" ./js/app.js"> </script>
+</body>
+
+</html>
