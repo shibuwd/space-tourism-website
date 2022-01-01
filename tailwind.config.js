@@ -53,12 +53,15 @@ module.exports = {
 			},
 
 			transitionTimingFunction: {
-				easeOutCirc: 'cubic-bezier(0, 0.55, 0.45, 1)'
+				easeOutCirc: 'cubic-bezier(0, 0.55, 0.45, 1)',
+				navEaseOut: 'cubic-bezier(0.5, 1, 0.89, 1)'
 			},
 
 			screens: {
-				smMax: { max: '639px' }
+				smMax: { max: '639px' },
 				// => @media (max-width: 639px) { ... }
+
+				'1xl': { min: '1439px' }
 			},
 
 			backgroundImage: {
@@ -81,6 +84,9 @@ module.exports = {
 
 				//destination images
 				desMoon: "url('../assets/destination/image-moon.webp')",
+				desMars: "url('../assets/destination/image-mars.webp')",
+				desEuropa: "url('../assets/destination/image-europa.webp')",
+				desTitan: "url('../assets/destination/image-titan.webp')"
 			}
 		}
 	},

@@ -5,6 +5,12 @@
 @tailwind utilities;
 
 
+@layer base {
+    body {
+        @apply overflow-x-hidden;
+    }
+}
+
 @layer components {
     .customInset {
         inset: 0 0 0 30%;
@@ -20,5 +26,15 @@
 @layer components {
     .primary-navigation[data-visible="true"] {
         transform: translateX(0%);
+    }
+}
+
+@layer components {
+    .navHover {
+        @apply after:absolute after:-bottom-[140%] after:w-0 after:left-0 after:border-b-3 after:border-pureWhite after:block after:duration-700 after:ease-navEaseOut;
+
+        @apply hover:after:border-opacity-50 hover:after:w-[93%] hover:after:border-b-3 hover:after:border-pureWhite;
+
+        @apply focus:after:border-opacity-50 focus:after:w-full focus:after:border-b-3 focus:after:border-pureWhite;
     }
 }
