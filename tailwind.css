@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer components {
     .customInset {
         inset: 0 0 0 30%;

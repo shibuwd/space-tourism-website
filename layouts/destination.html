@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png"
+        type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body>
+
+
+    <header class="primary-header flex items-center justify-between py-[1rem]">
+        <div>
+            <a href="./index.html"><img src="./assets/shared/logo.svg"
+                    alt="space tourism logo" class="logo pl-4">
+            </a>
+        </div>
+
+        <div class="nav-line lg:block lg:border-t-3 lg:w-[44%] lg:ml-[10%]
+            lg:border-pureWhite/50 lg:-z-[1]">
+        </div>
+
+        <button class="mobile-nav-toggle block absolute z-[9999] bg-transparent bg-hamburger
+        bg-no-repeat border-none w-[1.8rem] aspect-square top-8 right-5  
+        sm:hidden sm:z-[9999]
+        
+        " aria-controls="primary-navigation " aria-expanded="false">
+
+            <span class="sr-only">menu</span>
+        </button>
+
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation 
+            flex bg-bgNav text-white backdrop-blur-[5rem]
+
+                smMax:flex-col smMax:gap-8 smMax:fixed smMax:z-[10]
+                smMax:customInset smMax:pt-[45%] smMax:pl-[8%]
+                smMax:translate-x-full smMax:duration-700 smMax:ease-in-out
+                
+                sm:gap-[2.5rem] sm:p-[1.5rem] sm:px-10">
+
+                <li class="active">
+                    <a href="./index.html" class="font-BarlowCondensed uppercase tracking-[2.7px] 
+                    font-fw400 text-v11 
+
+                      sm:border-b-3 sm:border-pureWhite sm:pb-6 sm:outline-none
+                      sm:hover:border-b-3 sm:hover:border-opacity-50 
+                      sm:focus:border-b-3 sm:focus:border-opacity-50 ">
+                        <span class="font-fw700 mr-[.75rem]"
+                            aria-hidden="true">00</span>Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./destination.html" class=" font-BarlowCondensed uppercase tracking-[2.7px] 
+                    font-fw400 text-v11 outline-none
+                    
+                         sm:hover:border-b-3 sm:hover:border-opacity-50 sm:hover:pb-6
+                         sm:focus:border-b-3 sm:focus:border-opacity-50 sm:focus:pb-6
+                        ">
+                        <span class="font-fw700 mr-[.75rem]"
+                            aria-hidden="true">01</span>destination
+                    </a>
+                </li>
+
+                <li>
+                    <a href=""
+                        class=" font-BarlowCondensed uppercase
+                     tracking-[2.7px] font-fw400 text-v11 outline-none
+                     
+                         sm:hover:border-b-3 sm:hover:border-opacity-50 sm:hover:pb-6
+                         sm:focus:border-b-3 sm:focus:border-opacity-50 sm:focus:pb-6">
+                        <span class="font-fw700 mr-[.75rem]"
+                            aria-hidden="true">02</span>crew
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class=" font-BarlowCondensed uppercase tracking-[2.7px] 
+                    font-fw400 text-v11 outline-none
+
+                         sm:hover:border-b-3 sm:hover:border-opacity-50
+                         sm:hover:pb-6
+                         sm:focus:border-b-3 sm:focus:border-opacity-50
+                         sm:focus:pb-6">
+                        <span class="font-fw700 mr-[.75rem]"
+                            aria-hidden="true">03</span>technology
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="destination__bg absolute text-pureWhite text-center top-0 -z-10
+            flex items-center justify-center
+            
+            ">
+            <div class="container__img relative bg-desBgPhn bg-no-repeat bg-center 
+                bg-cover w-screen h-[926px]
+                md:bg-desBgTab md:h-screen md:w-screen
+                lg:bg-desBgDesk lg:h-screen lg:w-screen
+                ">
+            </div>
+        </div>
+
+        <div class="destination flex flex-col items-center justify-center 
+        
+        lg:flex-row lg:justify-around lg:items-center lg:overflow-x-hidden
+        ">
+            <div class="destination__top">
+                <h1 class="font-BarlowCondensed text-v10 uppercase trackin-[2.4px] font-fw400 text-pureWhite py-8
+                    
+                    md:text-v9 
+                    lg:text-v7
+                    ">
+                    <span class="font-fw700 text-pureWhite/50 mr-3"
+                        aria-hidden="true">01</span> pick
+                    your destination
+                </h1>
+                <div class="destination__place bg-desMoon bg-cover bg-no-repeat bg-center h-[170px] w-[170px] my-3
+                    
+                    md:h-[300px] sm:w-[300px]
+                    lg:h-[400px] lg:w-[400px]
+                    ">
+                </div>
+            </div>
+
+            <div class="destination__bottom">
+                <ul class="page__links flex items-center flex-row justify-center text-pureWhite uppercase py-4
+                    
+                    lg:justify-start">
+                    <li><a class="navbar__link font-BarlowCondensed mx-4 tracking-[2.36px]"
+                            href="./destination.html">moon</a></li>
+                    <li><a class="navbar__link font-BarlowCondensed mx-4 tracking-[2.36px]"
+                            href="./destination-mars.html">mars</a></li>
+                    <li><a class="navbar__link font-BarlowCondensed mx-4 tracking-[2.36px]"
+                            href="./destination-europa.html">europa</a></li>
+                    <li><a class="navbar__link font-BarlowCondensed mx-4 tracking-[2.36px]"
+                            href="./destination-titan.html">titan</a></li>
+                </ul>
+
+                <div class="text__info text-left">
+                    <h2 class=" font-Bellefair uppercase text-pureWhite text-v4 font-fw400 text-center my-4
+                        
+                        md:text-v3
+                        lg:text-left lg:text-v2">
+                        moon
+                    </h2>
+                    <p class=" font-Barlow text-v12 text-center text-grayishBlue px-6 
+                        
+                        md:w-[570px]
+                        lg:w-[445px] lg:text-left lg:pl-0 lg:text-v10">
+                        See our planet as you’ve never seen
+                        it before. A
+                        perfect relaxing trip away to help regain
+                        perspective and come back refreshed. While you’re
+                        there, take in some history by visiting
+                        the Luna 2 and Apollo 11 landing sites.
+                    </p>
+
+                    <hr class="my-6 w-[85vw] m-auto border-pureWhite/40
+                    
+                    md:w-[65vw] md:my-8
+                    lg:w-[33vw]">
+
+                    <div class="travel-info text-center first-letter:
+                    
+                    md:flex items-center md:justify-center md:flex-row md:gap-16 
+                    lg:text-left lg:justify-evenly">
+                        <h3 class="font-Bellefair text-v7 font-fw400 uppercase flex flex-col tracking-[2.40px] my-7 text-pureWhite 
+                            lg:text-v7">
+                            <span
+                                class=" font-BarlowCondensed text-v13 text-grayishBlue ">avg
+                                distance</span>384,400 km
+                        </h3>
+
+                        <h4 class="font-Bellefair text-v7 font-fw400 uppercase flex flex-col tracking-[2.40px] my-7 text-pureWhite 
+                            lg:text-v7">
+                            <span
+                                class=" font-BarlowCondensed text-v13 text-grayishBlue ">est.
+                                travel time
+                            </span>3 days
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src=" ./js/app.js"> </script>
+</body>
+
+</html>

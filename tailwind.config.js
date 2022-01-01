@@ -1,5 +1,4 @@
 module.exports = {
-	// content: ['./layouts/*.html'],
 	content: ['./layouts/**/*.{html,js}'],
 	theme: {
 		extend: {
@@ -45,7 +44,7 @@ module.exports = {
 
 			borderWidth: {
 				DEFAULT: '1px',
-				1: '1',
+				1: '1px',
 				2: '2px',
 				3: '3px',
 				4: '4px',
@@ -70,7 +69,18 @@ module.exports = {
 				//home bg img
 				homeBgPhn: "url('../assets/home/background-home-mobile.jpg')",
 				homeBgTab: "url('../assets/home/background-home-tablet.jpg')",
-				homeBgDesk: "url('../assets/home/background-home-desktop.jpg')"
+				homeBgDesk: "url('../assets/home/background-home-desktop.jpg')",
+
+				//destination bg img
+				desBgPhn:
+					"url('../assets/destination/background-destination-mobile.jpg')",
+				desBgTab:
+					"url('../assets/destination/background-destination-tablet.jpg')",
+				desBgDesk:
+					"url('../assets/destination/background-destination-desktop.jpg')",
+
+				//destination images
+				desMoon: "url('../assets/destination/image-moon.webp')",
 			}
 		}
 	},
