@@ -842,6 +842,10 @@ body{
   outline-offset: 2px;
 }
 
+.outline{
+  outline-style: solid;
+}
+
 .backdrop-blur-\[5rem\]{
   --tw-backdrop-blur: blur(5rem);
   -webkit-backdrop-filter: var(--tw-backdrop-filter);
