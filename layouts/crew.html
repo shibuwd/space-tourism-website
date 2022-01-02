@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png"
+        type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body>
+
+    <header class="primary-header flex items-center justify-between py-[1rem]">
+        <div>
+            <a href="./index.html"><img src="./assets/shared/logo.svg"
+                    alt="space tourism logo" class="logo pl-4">
+            </a>
+        </div>
+
+        <div class="nav-line lg:block lg:border-t-3 lg:w-[44%] lg:ml-[10%]
+            lg:border-pureWhite/50 lg:-z-[1]">
+        </div>
+
+        <button class="mobile-nav-toggle block absolute z-[9999] bg-transparent bg-hamburger
+        bg-no-repeat border-none w-[1.8rem] aspect-square top-8 right-5  
+        sm:hidden sm:z-[9999]
+        
+        " aria-controls="primary-navigation " aria-expanded="false">
+
+            <span class="sr-only">menu</span>
+        </button>
+
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation 
+            flex bg-bgNav text-white backdrop-blur-[5rem]
+
+                smMax:flex-col smMax:gap-8 smMax:fixed smMax:z-[10]
+                smMax:customInset smMax:pt-[45%] smMax:pl-[8%]
+                smMax:translate-x-full smMax:duration-700 smMax:ease-in-out
+                
+                sm:gap-[2.5rem] sm:p-[1.5rem] sm:px-10">
+
+                <li class="active">
+                    <a href="./index.html" class=" relative font-BarlowCondensed uppercase tracking-[2.7px] 
+                    font-fw400 text-v11 outline-none
+                    sm:navHover">
+                        <span class="font-fw700 mr-[.75rem]"
+                            aria-hidden="true">00</span>Home
+                    </a>
+                </li>
+                <li>
+                    <a href="./destination.html" class=" font-BarlowCondensed uppercase tracking-[2.7px] 
+                    font-fw400 text-v11 outline-none
+                    
+                         sm:relative sm:navHover">
+                        <span class="font-fw700 mr-[.75rem]"
+                            aria-hidden="true">01</span>destination
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./crew.html" class=" font-BarlowCondensed uppercase
+                     tracking-[2.7px] font-fw400 text-v11 outline-none
+                     
+                     sm:relative sm:navHover">
+                        <span class="font-fw700 mr-[.75rem]"
+                            aria-hidden="true">02</span>crew
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class=" font-BarlowCondensed uppercase tracking-[2.7px] 
+                    font-fw400 text-v11 outline-none
+                    sm:relative sm:navHover">
+                        <span class="font-fw700 mr-[.75rem]"
+                            aria-hidden="true">03</span>technology
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <div class="crew__bg absolute text-pureWhite text-center top-0 -z-10
+            flex items-center justify-center">
+            <div class="crew-bg-img bg-crewBgPhn bg-no-repeat bg-cover bg-center
+             w-screen h-[720px] min-h-screen
+
+            md:bg-crewBgTab 
+            lg:bg-crewBgDesk
+            
+            "></div>
+        </div>
+
+        <div class="crew absolute flex items-center justify-center 
+            flex-col pt-0 my-11 w-screen text-center">
+
+            <h1 class=" font-BarlowCondensed uppercase text-v10 tracking-[2.4px]
+                 text-pureWhite font-fw400 text-center mb-6 relative">
+                <span class="font-fw700 text-pureWhite/25 "
+                    aria-hidden="true">02
+                </span>meet
+                the crew</h1>
+            <div class="crew__top">
+
+                <div class="crew__img bg-commander w-[177px]
+                    h-[222px] bg-no-repeat bg-cover">
+                </div>
+            </div>
+
+            <div class="border-b-1 border-opacity-50 w-[90vw] sm:border-b-0 ">
+            </div>
+
+            <div class="crew__bottom">
+                <ul class="page__links flex items-center justify-center mt-6">
+                    <li><a class="dot inline-block w-[15px] h-[15px] bg-pureWhite 
+                        opacity-50 rounded-[50%] mt-0 mx-4 outline-none
+
+                        hover:opacity-100 hover:shadow-bs-01 hover:ease-easeOutCirc
+                        focus:opacity-100 focus:shadow-bs-01 focus:ease-easeOutCirc active"
+                            href="./crew.html"></a></li>
+                    <li><a class="dot inline-block w-[15px] h-[15px] bg-pureWhite 
+                        opacity-50 rounded-[50%] mt-0 mx-4 outline-none
+
+                        hover:opacity-100 hover:shadow-bs-01 hover:ease-easeOutCirc
+                        focus:opacity-100 focus:shadow-bs-01 focus:ease-easeOutCirc  "
+                            href="./crew-specialist.html"></a></li>
+                    <li><a class="dot inline-block w-[15px] h-[15px] bg-pureWhite 
+                        opacity-50 rounded-[50%] mt-0 mx-4 outline-none
+
+                        hover:opacity-100 hover:shadow-bs-01 hover:ease-easeOutCirc
+                        focus:opacity-100 focus:shadow-bs-01 focus:ease-easeOutCirc  "
+                            href="./crew-pilot.html"></a></li>
+                    <li><a class="dot inline-block w-[15px] h-[15px] bg-pureWhite 
+                        opacity-50 rounded-[50%] mt-0 mx-4 outline-none
+
+                        hover:opacity-100 hover:shadow-bs-01 hover:ease-easeOutCirc
+                        focus:opacity-100 focus:shadow-bs-01 focus:ease-easeOutCirc  "
+                            href="./crew-engineer.html"></a></li>
+                </ul>
+
+                <div class="text__info">
+                    <h2 class="font-Bellefair text-pureWhite text-v8 uppercase font-fw400 
+                       flex items-center flex-col pt-8">
+                        <span class=" text-v11 text-pureWhite/50"
+                            aria-hidden="true">Commander
+                        </span>Douglas Hurley
+                    </h2>
+
+                    <p class=" text-grayishBlue px-4 py-4">Douglas Gerald Hurley
+                        is an
+                        American engineer, former
+                        Marine Corps pilot
+                        and former NASA astronaut. He launched into space for
+                        the third time as
+                        commander of Crew Dragon Demo-2.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src=" ./js/app.js"> </script>
+</body>
+
+</html>

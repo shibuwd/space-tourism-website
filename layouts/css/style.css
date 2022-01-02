@@ -440,6 +440,10 @@ body{
   --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
   --tw-backdrop-blur: var(--tw-empty,/*!*/ /*!*/);
   --tw-backdrop-brightness: var(--tw-empty,/*!*/ /*!*/);
   --tw-backdrop-contrast: var(--tw-empty,/*!*/ /*!*/);
@@ -508,14 +512,19 @@ body{
   margin: auto;
 }
 
-.my-3{
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+.my-11{
+  margin-top: 2.75rem;
+  margin-bottom: 2.75rem;
 }
 
 .mx-4{
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.my-3{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .my-4{
@@ -533,13 +542,20 @@ body{
   margin-bottom: 1.75rem;
 }
 
-.my-11{
-  margin-top: 2.75rem;
-  margin-bottom: 2.75rem;
-}
-
 .mr-\[\.75rem\]{
   margin-right: .75rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
+}
+
+.mt-0{
+  margin-top: 0px;
 }
 
 .mr-3{
@@ -558,12 +574,28 @@ body{
   display: block;
 }
 
+.inline-block{
+  display: inline-block;
+}
+
 .flex{
   display: flex;
 }
 
 .aspect-square{
   aspect-ratio: 1 / 1;
+}
+
+.h-\[720px\]{
+  height: 720px;
+}
+
+.h-\[222px\]{
+  height: 222px;
+}
+
+.h-\[15px\]{
+  height: 15px;
 }
 
 .h-\[926px\]{
@@ -582,12 +614,28 @@ body{
   height: 150px;
 }
 
+.min-h-screen{
+  min-height: 100vh;
+}
+
 .w-\[1\.8rem\]{
   width: 1.8rem;
 }
 
 .w-screen{
   width: 100vw;
+}
+
+.w-\[177px\]{
+  width: 177px;
+}
+
+.w-\[90vw\]{
+  width: 90vw;
+}
+
+.w-\[15px\]{
+  width: 15px;
 }
 
 .w-\[170px\]{
@@ -630,12 +678,20 @@ body{
   border-radius: 50%;
 }
 
+.border-b-1{
+  border-bottom-width: 1px;
+}
+
 .border-none{
   border-style: none;
 }
 
 .border-pureWhite\/40{
   border-color: rgb(255 255 255 / 0.4);
+}
+
+.border-opacity-50{
+  --tw-border-opacity: 0.5;
 }
 
 .bg-transparent{
@@ -653,6 +709,14 @@ body{
 
 .bg-hamburger{
   background-image: url('../assets/shared/icon-hamburger.svg');
+}
+
+.bg-crewBgPhn{
+  background-image: url('../assets/crew/background-crew-mobile.jpg');
+}
+
+.bg-commander{
+  background-image: url('../assets/crew/image-douglas-hurley.webp');
 }
 
 .bg-desBgPhn{
@@ -696,14 +760,19 @@ body{
   padding-bottom: 1rem;
 }
 
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .px-6{
@@ -723,6 +792,14 @@ body{
 
 .pl-4{
   padding-left: 1rem;
+}
+
+.pt-0{
+  padding-top: 0px;
+}
+
+.pt-8{
+  padding-top: 2rem;
 }
 
 .text-left{
@@ -751,6 +828,10 @@ body{
 
 .text-v10{
   font-size: 1.125rem;
+}
+
+.text-v8{
+  font-size: 1.5rem;
 }
 
 .text-v4{
@@ -797,16 +878,16 @@ body{
   letter-spacing: 2.7px;
 }
 
+.tracking-\[2\.4px\]{
+  letter-spacing: 2.4px;
+}
+
 .tracking-\[2\.36px\]{
   letter-spacing: 2.36px;
 }
 
 .tracking-\[2\.40px\]{
   letter-spacing: 2.40px;
-}
-
-.tracking-\[2\.4px\]{
-  letter-spacing: 2.4px;
 }
 
 .tracking-wide{
@@ -823,6 +904,10 @@ body{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-pureWhite\/25{
+  color: rgb(255 255 255 / 0.25);
+}
+
 .text-pureWhite\/50{
   color: rgb(255 255 255 / 0.5);
 }
@@ -837,23 +922,17 @@ body{
   color: rgb(12 14 24 / var(--tw-text-opacity));
 }
 
+.opacity-50{
+  opacity: 0.5;
+}
+
 .outline-none{
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
 
-.outline{
-  outline-style: solid;
-}
-
 .backdrop-blur-\[5rem\]{
   --tw-backdrop-blur: blur(5rem);
-  -webkit-backdrop-filter: var(--tw-backdrop-filter);
-          backdrop-filter: var(--tw-backdrop-filter);
-}
-
-.backdrop-blur-\[10rem\]{
-  --tw-backdrop-blur: blur(10rem);
   -webkit-backdrop-filter: var(--tw-backdrop-filter);
           backdrop-filter: var(--tw-backdrop-filter);
 }
@@ -898,6 +977,20 @@ body{
   transition-timing-function: cubic-bezier(0, 0.55, 0.45, 1);
 }
 
+.hover\:opacity-100:hover{
+  opacity: 1;
+}
+
+.hover\:shadow-bs-01:hover{
+  --tw-shadow: 0 0 0 10px hsla(0, 0%, 86%, 0.1);
+  --tw-shadow-colored: 0 0 0 10px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:ease-easeOutCirc:hover{
+  transition-timing-function: cubic-bezier(0, 0.55, 0.45, 1);
+}
+
 .hover\:after\:scale-150:hover::after{
   content: var(--tw-content);
   --tw-scale-x: 1.5;
@@ -908,6 +1001,20 @@ body{
 .hover\:after\:opacity-100:hover::after{
   content: var(--tw-content);
   opacity: 1;
+}
+
+.focus\:opacity-100:focus{
+  opacity: 1;
+}
+
+.focus\:shadow-bs-01:focus{
+  --tw-shadow: 0 0 0 10px hsla(0, 0%, 86%, 0.1);
+  --tw-shadow-colored: 0 0 0 10px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.focus\:ease-easeOutCirc:focus{
+  transition-timing-function: cubic-bezier(0, 0.55, 0.45, 1);
 }
 
 .focus\:after\:scale-150:focus::after{
@@ -1043,6 +1150,10 @@ body{
     gap: 2.5rem;
   }
 
+  .sm\:border-b-0{
+    border-bottom-width: 0px;
+  }
+
   .sm\:bg-homeBgTab{
     background-image: url('../assets/home/background-home-tablet.jpg');
   }
@@ -1130,14 +1241,6 @@ body{
 }
 
 @media (min-width: 1024px){
-  .lg\:fixed{
-    position: fixed;
-  }
-
-  .lg\:left-\[18\%\]{
-    left: 18%;
-  }
-
   .lg\:-z-\[1\]{
     z-index: -1;
   }
@@ -1176,10 +1279,6 @@ body{
 
   .lg\:w-\[33vw\]{
     width: 33vw;
-  }
-
-  .lg\:w-\[42\%\]{
-    width: 42%;
   }
 
   .lg\:flex-row{
@@ -1265,16 +1364,6 @@ body{
   .lg\:text-v8{
     font-size: 1.5rem;
   }
-
-  .lg\:after\:absolute::after{
-    content: var(--tw-content);
-    position: absolute;
-  }
-
-  .lg\:after\:w-full::after{
-    content: var(--tw-content);
-    width: 100%;
-  }
 }
 
 @media (min-width: 1280px){
@@ -1335,16 +1424,6 @@ body{
 }
 
 @media (min-width: 1439px){
-  .\31xl\:my-20{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-  }
-
-  .\31xl\:my-2{
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
   .\31xl\:p-16{
     padding: 4rem;
   }

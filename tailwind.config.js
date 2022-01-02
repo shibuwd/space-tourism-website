@@ -64,6 +64,10 @@ module.exports = {
 				'1xl': { min: '1439px' }
 			},
 
+			boxShadow: {
+				'bs-01': '0 0 0 10px hsla(0, 0%, 86%, 0.1)'
+			},
+
 			backgroundImage: {
 				//navbar img
 				hamburger: "url('../assets/shared/icon-hamburger.svg')",
@@ -86,7 +90,15 @@ module.exports = {
 				desMoon: "url('../assets/destination/image-moon.webp')",
 				desMars: "url('../assets/destination/image-mars.webp')",
 				desEuropa: "url('../assets/destination/image-europa.webp')",
-				desTitan: "url('../assets/destination/image-titan.webp')"
+				desTitan: "url('../assets/destination/image-titan.webp')",
+
+				// crew bg img
+				crewBgPhn: "url('../assets/crew/background-crew-mobile.jpg')",
+				crewBgTab: "url('../assets/crew/background-crew-tablet.jpg'')",
+				crewBgDesk: "url('../assets/crew/background-crew-desktop.jpg'')",
+
+				//crew picture
+				commander: "url('../assets/crew/image-douglas-hurley.webp')"
 			}
 		}
 	},
