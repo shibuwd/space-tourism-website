@@ -496,6 +496,10 @@ body{
   top: 0px;
 }
 
+.-top-\[20rem\]{
+  top: -20rem;
+}
+
 .z-\[9999\]{
   z-index: 9999;
 }
@@ -544,10 +548,6 @@ body{
 
 .mr-\[\.75rem\]{
   margin-right: .75rem;
-}
-
-.mb-6{
-  margin-bottom: 1.5rem;
 }
 
 .mt-6{
@@ -638,6 +638,10 @@ body{
   width: 15px;
 }
 
+.w-\[190px\]{
+  width: 190px;
+}
+
 .w-\[170px\]{
   width: 170px;
 }
@@ -648,6 +652,22 @@ body{
 
 .w-\[150px\]{
   width: 150px;
+}
+
+.w-\[237px\]{
+  width: 237px;
+}
+
+.w-\[217px\]{
+  width: 217px;
+}
+
+.w-\[207px\]{
+  width: 207px;
+}
+
+.w-\[200px\]{
+  width: 200px;
 }
 
 .cursor-pointer{
@@ -672,6 +692,10 @@ body{
 
 .justify-between{
   justify-content: space-between;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .rounded-\[50\%\]{
@@ -713,6 +737,18 @@ body{
 
 .bg-crewBgPhn{
   background-image: url('../assets/crew/background-crew-mobile.jpg');
+}
+
+.bg-flight{
+  background-image: url('../assets/crew/image-anousheh-ansari.webp');
+}
+
+.bg-pilot{
+  background-image: url('../assets/crew/image-victor-glover.webp');
+}
+
+.bg-mission{
+  background-image: url('../assets/crew/image-mark-shuttleworth.webp');
 }
 
 .bg-commander{
@@ -1118,24 +1154,66 @@ body{
     --tw-border-opacity: 0.5;
   }
 
+  .sm\:fixed{
+    position: fixed;
+  }
+
   .sm\:relative{
     position: relative;
+  }
+
+  .sm\:bottom-0{
+    bottom: 0px;
+  }
+
+  .sm\:top-0{
+    top: 0px;
   }
 
   .sm\:z-\[9999\]{
     z-index: 9999;
   }
 
+  .sm\:-mx-\[8rem\]{
+    margin-left: -8rem;
+    margin-right: -8rem;
+  }
+
+  .sm\:-mx-\[12rem\]{
+    margin-left: -12rem;
+    margin-right: -12rem;
+  }
+
   .sm\:mt-20{
     margin-top: 5rem;
+  }
+
+  .sm\:flex{
+    display: flex;
   }
 
   .sm\:hidden{
     display: none;
   }
 
+  .sm\:h-\[442px\]{
+    height: 442px;
+  }
+
   .sm\:h-\[242px\]{
     height: 242px;
+  }
+
+  .sm\:w-\[356px\]{
+    width: 356px;
+  }
+
+  .sm\:w-\[458px\]{
+    width: 458px;
+  }
+
+  .sm\:w-\[416px\]{
+    width: 416px;
   }
 
   .sm\:w-\[300px\]{
@@ -1146,12 +1224,36 @@ body{
     width: 242px;
   }
 
+  .sm\:w-\[386px\]{
+    width: 386px;
+  }
+
+  .sm\:w-\[396px\]{
+    width: 396px;
+  }
+
+  .sm\:w-\[6px\]{
+    width: 6px;
+  }
+
+  .sm\:w-\[410px\]{
+    width: 410px;
+  }
+
+  .sm\:w-\[420px\]{
+    width: 420px;
+  }
+
+  .sm\:flex-col-reverse{
+    flex-direction: column-reverse;
+  }
+
   .sm\:gap-\[2\.5rem\]{
     gap: 2.5rem;
   }
 
-  .sm\:border-b-0{
-    border-bottom-width: 0px;
+  .sm\:border-0{
+    border-width: 0px;
   }
 
   .sm\:bg-homeBgTab{
@@ -1186,6 +1288,11 @@ body{
 }
 
 @media (min-width: 768px){
+  .md\:my-auto{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
   .md\:my-8{
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -1195,12 +1302,24 @@ body{
     display: flex;
   }
 
+  .md\:h-\[542px\]{
+    height: 542px;
+  }
+
   .md\:h-screen{
     height: 100vh;
   }
 
   .md\:h-\[300px\]{
     height: 300px;
+  }
+
+  .md\:w-\[402px\]{
+    width: 402px;
+  }
+
+  .md\:w-\[400px\]{
+    width: 400px;
   }
 
   .md\:w-screen{
@@ -1213,6 +1332,10 @@ body{
 
   .md\:w-\[65vw\]{
     width: 65vw;
+  }
+
+  .md\:w-\[422px\]{
+    width: 422px;
   }
 
   .md\:flex-row{
@@ -1231,6 +1354,18 @@ body{
     background-image: url('../assets/destination/background-destination-tablet.jpg');
   }
 
+  .md\:pt-4{
+    padding-top: 1rem;
+  }
+
+  .md\:text-v8{
+    font-size: 1.5rem;
+  }
+
+  .md\:text-v5{
+    font-size: 2.5rem;
+  }
+
   .md\:text-v9{
     font-size: 1.25rem;
   }
@@ -1243,6 +1378,21 @@ body{
 @media (min-width: 1024px){
   .lg\:-z-\[1\]{
     z-index: -1;
+  }
+
+  .lg\:-mx-\[28rem\]{
+    margin-left: -28rem;
+    margin-right: -28rem;
+  }
+
+  .lg\:my-20{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .lg\:mx-10{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
   }
 
   .lg\:ml-\[10\%\]{
@@ -1273,6 +1423,14 @@ body{
     width: 44%;
   }
 
+  .lg\:w-\[440px\]{
+    width: 440px;
+  }
+
+  .lg\:w-\[470px\]{
+    width: 470px;
+  }
+
   .lg\:w-\[445px\]{
     width: 445px;
   }
@@ -1281,12 +1439,40 @@ body{
     width: 33vw;
   }
 
+  .lg\:w-\[500px\]{
+    width: 500px;
+  }
+
+  .lg\:w-\[0px\]{
+    width: 0px;
+  }
+
+  .lg\:w-\[490px\]{
+    width: 490px;
+  }
+
+  .lg\:w-\[520px\]{
+    width: 520px;
+  }
+
+  .lg\:w-\[510px\]{
+    width: 510px;
+  }
+
   .lg\:flex-row{
     flex-direction: row;
   }
 
+  .lg\:flex-row-reverse{
+    flex-direction: row-reverse;
+  }
+
   .lg\:flex-col{
     flex-direction: column;
+  }
+
+  .lg\:items-start{
+    align-items: flex-start;
   }
 
   .lg\:items-center{
@@ -1333,6 +1519,11 @@ body{
     padding: 2rem;
   }
 
+  .lg\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .lg\:pl-0{
     padding-left: 0px;
   }
@@ -1367,6 +1558,25 @@ body{
 }
 
 @media (min-width: 1280px){
+  .xl\:-mx-\[30rem\]{
+    margin-left: -30rem;
+    margin-right: -30rem;
+  }
+
+  .xl\:my-28{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+
+  .xl\:-mx-\[35rem\]{
+    margin-left: -35rem;
+    margin-right: -35rem;
+  }
+
+  .xl\:ml-32{
+    margin-left: 8rem;
+  }
+
   .xl\:mr-\[25rem\]{
     margin-right: 25rem;
   }

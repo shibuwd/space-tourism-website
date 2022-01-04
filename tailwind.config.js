@@ -98,7 +98,10 @@ module.exports = {
 				crewBgDesk: "url('../assets/crew/background-crew-desktop.jpg'')",
 
 				//crew picture
-				commander: "url('../assets/crew/image-douglas-hurley.webp')"
+				commander: "url('../assets/crew/image-douglas-hurley.webp')",
+				mission: "url('../assets/crew/image-mark-shuttleworth.webp')",
+				pilot: "url('../assets/crew/image-victor-glover.webp')",
+				flight: "url('../assets/crew/image-anousheh-ansari.webp')"
 			}
 		}
 	},
