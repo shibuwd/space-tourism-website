@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png"
+        type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body>
+
+    <header class="primary-header flex items-center justify-between py-[1rem]">
+        <div>
+            <a href="./index.html"><img src="./assets/shared/logo.svg"
+                    alt="space tourism logo" class="logo pl-4">
+            </a>
+        </div>
+
+        <div class="nav-line lg:block lg:border-t-3 lg:w-[44%] lg:ml-[10%]
+            lg:border-pureWhite/50 lg:-z-[1]">
+        </div>
+
+        <button class="mobile-nav-toggle block absolute z-[9999] bg-transparent bg-hamburger
+        bg-no-repeat border-none w-[1.8rem] aspect-square top-8 right-5  
+        sm:hidden sm:z-[9999]
+        
+        " aria-controls="primary-navigation " aria-expanded="false">
+
+            <span class="sr-only">menu</span>
+        </button>
+
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation 
+            flex bg-bgNav text-white backdrop-blur-[5rem]
+
+                smMax:flex-col smMax:gap-8 smMax:fixed smMax:z-[10]
+                smMax:customInset smMax:pt-[45%] smMax:pl-[8%]
+                smMax:translate-x-full smMax:duration-700 smMax:ease-in-out
+                
+                sm:gap-[2.5rem] sm:p-[1.5rem] sm:px-10">
+
+                <li class="active">
+                    <a href="./index.html" class=" relative font-BarlowCondensed uppercase tracking-[2.7px] 
+                    font-fw400 text-v11 outline-none
+                    sm:navHover">
+                        <span class="font-fw700 mr-[.75rem]"
+                            aria-hidden="true">00</span>Home
+                    </a>
+                </li>
+                <li>
+                    <a href="./destination.html" class=" font-BarlowCondensed uppercase tracking-[2.7px] 
+                    font-fw400 text-v11 outline-none
+                    
+                         sm:relative sm:navHover">
+                        <span class="font-fw700 mr-[.75rem]"
+                            aria-hidden="true">01</span>destination
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./crew.html" class=" font-BarlowCondensed uppercase
+                     tracking-[2.7px] font-fw400 text-v11 outline-none
+                     
+                     sm:relative sm:navHover">
+                        <span class="font-fw700 mr-[.75rem]"
+                            aria-hidden="true">02</span>crew
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./technology.html" class=" font-BarlowCondensed uppercase tracking-[2.7px] 
+                    font-fw400 text-v11 outline-none
+                    sm:relative sm:navHover">
+                        <span class="font-fw700 mr-[.75rem]"
+                            aria-hidden="true">03</span>technology
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="tech__bg absolute text-center top-0 -z-10
+            flex items-center justify-center">
+
+            <div class="container__img crew-bg-img bg-techBgPhn bg-no-repeat bg-cover
+             w-screen h-[667px] min-h-screen
+             
+             md:bg-techBgTab 
+             lg:bg-techBgDesk lg:h-screen lg:min-h-[768px]">
+            </div>
+        </div>
+
+        <div
+            class="tech lg:flex lg:flex-row-reverse lg:items-center lg:justify-evenly lg:m-auto">
+
+            <div class="tech__top pt-14
+            md:mt-20">
+                <picture>
+                    <source
+                        srcset="assets/technology/image-spaceport-portrait.jpg"
+                        media="(min-width: 64rem)" />
+                    <img class="w-screen lg:h-[527px] lg:w-[515px]"
+                        src="./assets/technology/image-spaceport-landscape.jpg"
+                        alt="">
+                </picture>
+
+            </div>
+
+            <div class="tech__bottom lg:flex lg:items-center lg:justify-center">
+
+                <ul class="page__links flex items-center justify-center gap-5
+                lg:block lg:mr-8
+                ">
+                    <li><a class="dot font-Bellefair text-v11 text-pureWhite w-[40px] h-[40px] 
+                        rounded-[50%] border-1 border-gray-400 flex items-center justify-center
+                       
+                        hover:border-1 hover:border-pureWhite
+                        focus:border-1 focus:border-pureWhite
+                        
+                        md:h-[60px] md:w-[60px] md:text-v8 md:my-10
+                        
+                        " href="./technology.html">1</a>
+                    </li>
+                    <li><a class="dot font-Bellefair text-v11 text-pureWhite w-[40px] h-[40px] 
+                        rounded-[50%] border-1 border-gray-400 flex items-center justify-center
+                        my-8 outline-none  uration-500 ease-easeOutCirc
+                        
+                        hover:border-1 hover:border-pureWhite
+                        focus:border-1 focus:border-pureWhite 
+                        
+                        md:h-[60px] md:w-[60px] md:text-v8 md:my-8"
+                            href="./technology-spaceport.html">2</a>
+                    </li>
+                    <li><a class="dot font-Bellefair text-v11 text-pureWhite w-[40px] h-[40px] 
+                        rounded-[50%] border-1 border-gray-400 flex items-center justify-center 
+                        my-8 outline-none duration-500 ease-easeOutCirc
+                        
+                        hover:border-1 hover:border-pureWhite
+                        focus:border-1 focus:border-pureWhite 
+                        
+                        md:h-[60px] md:w-[60px] md:text-v8 md:my-8
+                        " href="./technology-capsule.html">3</a>
+                    </li>
+                </ul>
+
+                <div class="text__info text-center">
+                    <h1 class=" font-BarlowCondensed text-v11 uppercase text-pureWhite 
+                        tracking-[2.4px] font-fw400 absolute top-[5rem] mx-24
+                        
+                        md:text-v9 md:top-[9rem]
+                        lg:mx-0 lg:text-v7">
+                        <span class="font-fw700 text-pureWhite/25"
+                            aria-hidden="true">03 </span>space
+                        launch 101
+                    </h1>
+
+                    <h2 class="font-Bellefair text-v8 uppercase font-fw400 text-pureWhite flex flex-col 
+                        
+                        md:text-v5
+                        lg:text-left lg:text-v4">
+                        <span class="font-BarlowCondensed font-fw400 text-v13 tracking-[2.4px]
+                            
+                        md:text-v12">
+                            The terminology...
+                        </span>
+                        spaceport
+                    </h2>
+
+                    <p class=" text-v12 font-Barlow text-grayishBlue px-3 py-6
+                    
+                    md:w-[458px] md:m-auto
+                    lg:text-left lg:p-0 lg:pt-4 lg:text-v10">
+                        A spaceport or cosmodrome is a site for launching (or
+                        receiving) spacecraft,
+                        by analogy to the seaport for ships or airport for
+                        aircraft. Based in the
+                        famous Cape Canaveral, our spaceport is ideally situated
+                        to take advantage
+                        of the Earth’s rotation for launch.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src=" ./js/app.js"> </script>
+</body>
+
+</html>

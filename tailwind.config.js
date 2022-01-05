@@ -101,7 +101,22 @@ module.exports = {
 				commander: "url('../assets/crew/image-douglas-hurley.webp')",
 				mission: "url('../assets/crew/image-mark-shuttleworth.webp')",
 				pilot: "url('../assets/crew/image-victor-glover.webp')",
-				flight: "url('../assets/crew/image-anousheh-ansari.webp')"
+				flight: "url('../assets/crew/image-anousheh-ansari.webp')",
+
+				//technology bg images
+				techBgPhn:
+					"url('../assets/technology/background-technology-mobile.jpg')",
+				techBgTab:
+					"url('../assets/technology/background-technology-tablet.jpg')",
+				techBgDesk:
+					"url('../assets/technology/background-technology-desktop.jpg')",
+
+				//technology picture
+				vehicleLandscape:
+					"url('../assets/technology/image-launch-vehicle-landscape.jpg')",
+				vehiclePortrait:
+					"url('../assets/technology/image-launch-vehicle-portrait.jpg')",
+				vehicle: "url('../assets/crew/image-douglas-hurley.webp')"
 			}
 		}
 	},
