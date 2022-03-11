@@ -8,7 +8,7 @@
     "pro": "npx tailwindcss -i tailwind.css -o ./layouts/css/style.css --minify"
   },
   "keywords": [],
-  "author": "",
+  "author": "shibuwd",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.2",
